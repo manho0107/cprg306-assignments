@@ -50,10 +50,10 @@ export default function NewItem() {
                     <form onSubmit={handleSubmit}>
                         <input
                             type="text"
-                            placeholder=" Item Name"
+                            placeholder="Item Name"
                             required value={name}
                             onChange={handleNameChange}
-                            className="mb-3 h-10 border-2 w-full bg-orange-50 border-gray-400 text-gray-500 rounded-md"
+                            className="mb-3 h-10 border-2 w-full p-1 bg-orange-50 border-gray-400 text-gray-500 rounded-md"
                         />
 
                         <div className="flex flex-row justify-between mb-3">
@@ -63,7 +63,7 @@ export default function NewItem() {
                                 max="99"
                                 value={quantity}
                                 required onChange={handleQuantityChange}
-                                className="w-full h-10 border-2 bg-orange-50 border-gray-400 text-gray-500 rounded-md"
+                                className="w-full h-10 border-2 p-1 bg-orange-50 border-gray-400 text-gray-500 rounded-md"
                             />
 
                             <select 
