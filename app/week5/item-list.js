@@ -32,10 +32,10 @@ export default function ItemList() {
     
       return (
           <>
-            {button(setSortBy)}
+            {renderButton(setSortBy)}
             {Object.keys(groupedCategory).map((category) => (
               <div key={category}>
-                <h2 className="text-xl pl-1 m-4 mt-8">{category}</h2>
+                <h2 className="text-3xl font-bold pl-1 m-4 mt-5 text-sky-800">{category}</h2>
                 {groupedCategory[category].map((item) => (
                   <Item
                     key={item.key}
@@ -52,7 +52,7 @@ export default function ItemList() {
   
     return (
       <>
-        {button(setSortBy)}
+        {renderButton(setSortBy)}
         {items.map((item) => (
         <Item
           key={item.key}
@@ -65,7 +65,7 @@ export default function ItemList() {
     );
 }
 
-function button(setSortBy) {
+function renderButton(setSortBy) {
     return (
         <div>
             <label className="ml-5 font-bold text-3xl">
@@ -87,7 +87,7 @@ function button(setSortBy) {
                     Category
                 </button>
                 <button
-                    id="groupedCategory"
+                    id="grouped category"
                     onClick={(e) => setSortBy(e.target.id)}
                     className="ml-5 bg-emerald-400 font-bold rounded-md p-3 hover:bg-blue-500 active:bg-amber-500"
                 >
