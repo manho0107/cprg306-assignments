@@ -35,7 +35,7 @@ export default function ItemList() {
             {button(setSortBy)}
             {Object.keys(groupedCategory).map((category) => (
               <div key={category}>
-                <h2 className="ml-5 mt-5 mb-3 text-3xl font-bold text-sky-900">Category: {category}</h2>
+                <h2 className="ml-5 mt-5 mb-3 text-3xl font-bold text-sky-900">{category}</h2>
                 {groupedCategory[category].map((item) => (
                   <Item
                     key={item.key}
