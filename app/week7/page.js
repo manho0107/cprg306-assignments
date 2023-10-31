@@ -40,7 +40,7 @@ export default function Page() {
     </main>
   );
   
-  /***** The following layout is saved for future use but not this time *****/
+  /***** The following layout is saved for future use but not for this time *****/
   /*return (
     <main>
       <h1 className="font-bold text-5xl center-text mb-5 mt-5 ml-5">Shopping List</h1>
