@@ -24,15 +24,15 @@ export default function mealIdea ({ingredient}) {
 
     return (
         <div>
-        <ul>
-          {ingredient === '' ? (
-            <li>Click a product and see its meal recipe.</li>
-          ) : meals === null || meals.length === 0 ? (
-            <li>No recipe for {ingredient}.</li>
-          ) : (
-            meals.map((meal) => <li key={meal.idMeal} className="mt-2 mb-2 p-2 bg-teal-50 hover:bg-teal-100 font-medium">{meal.strMeal}</li>)
-          )}
-        </ul>
+            <ul>
+            {ingredient === '' ? (
+                <li>Click a product and see its meal recipe.</li>
+            ) : meals === null || meals.length === 0 ? (
+                <li>No recipe for {ingredient}.</li>
+            ) : (
+                meals.map((meal) => <li key={meal.idMeal} className="mt-3 mb-2 p-1 w-96 bg-blue-50 hover:bg-sky-200">{meal.strMeal}</li>)
+            )}
+            </ul>
       </div>
     );
 }
