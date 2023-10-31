@@ -32,7 +32,7 @@ export default function Page() {
           <NewItem onAddItem={handleAddItem} />
           <ItemList items={items} onItemSelect={handleItemSelect} />
         </div>
-        <div className="flex-1 pl-2 pt-2 h-[48rem]">
+        <div className="flex-1 pl-2 pt-2 h-[48rem] mr-[48rem]">
           <h1 className="font-bold text-3xl">Meal Recipe Suggestions</h1>
           <MealIdeas ingredient={selectedItemName} />
         </div>
