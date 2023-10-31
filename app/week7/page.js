@@ -16,8 +16,8 @@ export default function Page() {
   };
 
   const handleItemSelect = (itemName) => {
-    const cleanedItemName = itemName.replace(/\p{Emoji}/gu, '').split(',')[0].trim().toLowerCase();
-    setSelectedItemName(cleanedItemName);
+    const cleanedItemName = itemName.replace(/\p{Emoji}/gu, '').split(',')[0].trim(); // remove emoji, split words with ",'
+    setSelectedItemName(cleanedItemName); // Set the sanitized item name as the selected item
   };
 
   return (
