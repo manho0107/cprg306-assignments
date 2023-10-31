@@ -65,7 +65,7 @@ function button(setSortBy) {
             <label className="ml-5 font-bold text-3xl">
                 Sort by:
             </label>
-            <div className="sm:flex mt-5 ml-5 mb-5 text-3xl">
+            <div className="sm:flex mt-5 ml-5 mb-5 text-3xl w-[40rem]">
                 <button
                     id="name"
                     onClick={(e) => setSortBy(e.target.id)}

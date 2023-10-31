@@ -37,12 +37,12 @@ export default function NewItem({onAddItem}) {
 
     return (
         <main>
-            <div className="flex flex-col w-1/3 mt-1 mb-2 ml-5 p-2 bg-white">
-                <div className="flex flex-col max-w-s bg-sky-100 rounded-md">
+            <div className="flex flex-col w-[40rem] mt-1 mb-2 ml-5 p-2 bg-white">
+                <div className="flex flex-col max-w-s bg-blue-300 rounded-md">
                     <h1 className="font-bold text-3xl mt-4 mb-4 text-center">
                         Shopping Cart
                     </h1>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} className="p-2">
                         <input
                             type="text"
                             placeholder="Item Name"

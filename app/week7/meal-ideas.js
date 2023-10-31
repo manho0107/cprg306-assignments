@@ -23,16 +23,16 @@ export default function mealIdea ({ingredient}) {
     }, [ingredient]);
 
     return (
-        <div>
+        <div className="item-left h-screen p-4 w-[25rem] bg-blue-50">
             <ul>
             {ingredient === '' ? (
                 <li>Click a product and see its meal recipe.</li>
             ) : meals === null || meals.length === 0 ? (
                 <li>No recipe for {ingredient}.</li>
             ) : (
-                meals.map((meal) => <li key={meal.idMeal} className="mt-3 mb-2 p-1 w-96 bg-blue-50 hover:bg-sky-200">{meal.strMeal}</li>)
+                meals.map((meal) => <li key={meal.idMeal} className="mt-2 mb-2 p-1 w-96 hover:bg-sky-200">{meal.strMeal}</li>)
             )}
             </ul>
-      </div>
+        </div>
     );
 }

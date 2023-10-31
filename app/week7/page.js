@@ -27,14 +27,18 @@ export default function Page() {
         <p>Our shop is designated to provide the best quality of grocery!</p>
         <p>We accept all cashless payments.</p>
       </div>
-      <div className="flex">
-        <div className="flex-1 pr-2">
+      <div className="">
+        <div className="pr-2">
           <NewItem onAddItem={handleAddItem} />
-          <ItemList items={items} onItemSelect={handleItemSelect} />
         </div>
-        <div className="flex-1 pl-2 pt-2 h-[48rem] mr-[48rem]">
-          <h1 className="font-bold text-3xl">Meal Recipe Suggestions</h1>
-          <MealIdeas ingredient={selectedItemName} />
+        <div className="flex pt-2 h-[48rem] mr-[48rem]">
+          <div>
+            <ItemList items={items} onItemSelect={handleItemSelect} />
+          </div>
+          <div className="ml-5">
+            <h1 className="font-bold text-3xl mb-2">Meal Recipe Suggestions</h1>
+            <MealIdeas ingredient={selectedItemName} />
+          </div>
         </div>
       </div>
     </main>
