@@ -4,8 +4,7 @@ import { useState } from "react";
 import ItemList from "./item-list";
 import NewItem from "./new-item";
 import ItemData from "./items";
-import MealIdea from "./meal-ideas";
-import Link from "next/link";
+import MealIdeas from "./meal-ideas";
 
 export default function Page() {
 
@@ -17,8 +16,8 @@ export default function Page() {
   };
 
   const handleItemSelect = (itemName) => {
-    const cleanedItemName = itemName.replace(/([\u2700-\u27BF]|[\uE000-\uF8FF]|�[�-�]|�[�-�]|[\u2011-\u26FF]|�[�-�])/g, '').trim();
-    console.log('Cleaned item name:', cleanedItemName);
+    const cleanedItemName = itemName.replace(/\p{Emoji}/gu, '').split(',')[0].trim().toLowerCase();
+    console.log('Cleaned item name: ', cleanedItemName);
     setSelectedItemName(cleanedItemName);
   };
 
@@ -36,8 +35,8 @@ export default function Page() {
             <ItemList items={items} onItemSelect={handleItemSelect}/>
           </div>
           <div className="flex-1 pl-2 pt-2 bg-amber-200 h-80">
-            <h1 className="font-bold text-3xl">Meal Recipe</h1>
-            <MealIdea ingredient={selectedItemName} />
+            <h1 className="font-bold text-3xl">Meal Recipe Suggestions</h1>
+            <MealIdeas ingredient={selectedItemName} />
           </div>
         </div>
     </main>

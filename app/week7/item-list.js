@@ -6,13 +6,6 @@ import { useState } from "react";
 export default function ItemList({items, onItemSelect}) {
     const [sortBy, setSortBy] = useState("name"); // sorted by name by this default
 
-    const itemList = items.map((item) => ({
-      key: item.key,
-      name: item.name,
-      quantity: item.quantity,
-      category: item.category
-    }));
-
     if (sortBy === "name") {                                              // sort by name
         items.sort((a, b) => a.name.localeCompare(b.name));
     }

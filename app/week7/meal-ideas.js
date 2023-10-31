@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 export default function mealIdea ({ingredient}) {
-    const [meals, setMeals] = useState("");
+    const [meals, setMeals] = useState([]);
 
     async function fetchMealIdeas(ingredient) {
         try {
@@ -12,7 +12,7 @@ export default function mealIdea ({ingredient}) {
           const data = await response.json();
           setMeals(data.meals);
         } catch (error) {
-          console.error("Error fetching meal ideas:", error);
+          console.error("Unable fetching meal ideas:", error);
         }
       }
 
