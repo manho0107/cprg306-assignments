@@ -18,7 +18,7 @@ export default function mealIdea ({ingredient}) {
 
     useEffect(() => {
         if (ingredient) {
-            fetchMealIdeas (ingredient); // call fetchMealideas function to fetch meal ideas from 'ingredient'
+            fetchMealIdeas (ingredient); // call fetch Mealideas function to fetch meal ideas from 'ingredient'
         }
     }, [ingredient]);
 
