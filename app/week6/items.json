@@ -1,74 +1,74 @@
 [
-    {
-      "id": "1h2GJKH12gkHG31h1H",
-      "name": "MacBook Pro 16 💻",
-      "quantity": 100,
-      "category": "Electronics"
-    },
-    {
-      "id": "2KJH3k2j3H1k2J3K1H",
-      "name": "iPhone 15 Pro 📱",
-      "quantity": 50,
-      "category": "Electronics"
-    },
-    {
-      "id": "3h2KJH3k2j3H1k2J3",
-      "name": "Printer 🖨️",
-      "quantity": 80,
-      "category": "Electronics"
-    },
-    {
-      "id": "4k2J3K1H2GJKH12gk",
-      "name": "Wireless Keyboard ⌨️",
-      "quantity": 200,
-      "category": "Accessories"
-    },
-    {
-      "id": "5H1h1H2KJH3k2j3H",
-      "name": "Wireless Mouse 🖱️",
-      "quantity": 200,
-      "category": "Accessories"
-    },
-    {
-      "id": "6H1k2J3K1H2GJKH1",
-      "name": "Smartwatch ⌚",
-      "quantity": 500,
-      "category": "Jewelry"
-    },
-    {
-      "id": "7gkHG31h1H2KJH3k",
-      "name": "Camera 📷",
-      "quantity": 80,
-      "category": "Filming Device"
-    },
-    {
-      "id": "8j3H1k2J3K1H2GJK",
-      "name": "Video Camera 📹",
-      "quantity": 90,
-      "category": "Accessories"
-    },
-    {
-      "id": "9H12gkHG31h1H2KJ",
-      "name": "Microphone 🎙️",
-      "quantity": 40,
-      "category": "Accessories"
-    },
-    {
-      "id": "10H3k2j3H1k2J3K1",
-      "name": "Power Bank 🔋",
-      "quantity": 50,
-      "category": "Accessories"
-    },
-    {
-      "id": "11k2J3K1H2GJKH12",
-      "name": "Adapter🔌",
-      "quantity": 50,
-      "category": "Accessories"
-    },
-    {
-      "id": "12GJKH12gkHG31h1",
-      "name": "Wifi Transmitter📡",
-      "quantity": 30,
-      "category": "Communication"
-    }
-  ]
+  {
+    "id": "1h2GJKH12gkHG31h1H",
+    "name": "Milk, 4 L 🥛",
+    "quantity": 1,
+    "category": "Dairy"
+  },
+  {
+    "id": "2KJH3k2j3H1k2J3K1H",
+    "name": "Bread 🍞",
+    "quantity": 2,
+    "category": "Bakery"
+  },
+  {
+    "id": "3h2KJH3k2j3H1k2J3",
+    "name": "Eggs, dozen 🥚",
+    "quantity": 2,
+    "category": "Dairy"
+  },
+  {
+    "id": "4k2J3K1H2GJKH12gk",
+    "name": "Bananas 🍌",
+    "quantity": 6,
+    "category": "Produce"
+  },
+  {
+    "id": "5H1h1H2KJH3k2j3H",
+    "name": "Broccoli 🥦",
+    "quantity": 3,
+    "category": "Produce"
+  },
+  {
+    "id": "6H1k2J3K1H2GJKH1",
+    "name": "Chicken Breasts, 1 kg 🍗",
+    "quantity": 1,
+    "category": "Meat"
+  },
+  {
+    "id": "7gkHG31h1H2KJH3k",
+    "name": "Pasta Sauce 🍝",
+    "quantity": 3,
+    "category": "Canned goods"
+  },
+  {
+    "id": "8j3H1k2J3K1H2GJK",
+    "name": "Spaghetti, 454 g 🍝",
+    "quantity": 2,
+    "category": "Dry goods"
+  },
+  {
+    "id": "9H12gkHG31h1H2KJ",
+    "name": "Toilet Paper, 12 pack 🧻",
+    "quantity": 1,
+    "category": "Household"
+  },
+  {
+    "id": "10H3k2j3H1k2J3K1",
+    "name": "Paper Towels, 6 pack",
+    "quantity": 1,
+    "category": "Household"
+  },
+  {
+    "id": "11k2J3K1H2GJKH12",
+    "name": "Dish Soap 🍽️",
+    "quantity": 1,
+    "category": "Household"
+  },
+  {
+    "id": "12GJKH12gkHG31h1",
+    "name": "Hand Soap 🧼",
+    "quantity": 4,
+    "category": "Household"
+  }
+]

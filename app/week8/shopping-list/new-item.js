@@ -69,17 +69,13 @@ export default function NewItem({onAddItem}) {
                                 <option value disable>
                                     Category
                                 </option>
-                                <option value="Electronics">Produce</option>
-                                <option value="Accessories">Dairy</option>
-                                <option value="Jewelry">Bakery</option>
-                                <option value="Filming Device">Meat</option>
-                                <option value="Communication">Frozen Foods</option>
-                                <option value="Communication">Canned Goods</option>
-                                <option value="Communication">Dry Goods</option>
-                                <option value="Communication">Beverages</option>
-                                <option value="Communication">Snacks</option>
-                                <option value="Communication">Household</option>
-                                <option value="Communication">Other</option>
+                                <option value="Dairy">Dairy</option>
+                                <option value="Bakery">Bakery</option>
+                                <option value="Produce">Produce</option>
+                                <option value="Meat">Meat</option>
+                                <option value="Canned goods">Canned goods</option>
+                                <option value="Dry goods">Dry goods</option>
+                                <option value="Household">Household</option>
                             </select>
                         </div>
                         <div className="flex justify-center mb-4">

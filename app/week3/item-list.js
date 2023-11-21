@@ -2,75 +2,75 @@ import Item from "./item";
 
 export default function ItemList() {
     const item1 = {
-        name: "MacBook Pro 16 💻",
-        quantity: 100,
-        category: "Electronics",
+        name: "Milk, 4 L 🥛",
+        quantity: 1,
+        category: "Dairy",
     };
     
     const item2 = {
-        name: "iPhone 15 Pro 📱",
-        quantity: 50,
-        category: "Electronics",
+        name: "Bread 🍞",
+        quantity: 2,
+        category: "Bakery",
     };
     
     const item3 = {
-        name: "Printer 🖨️",
-        quantity: 80,
-        category: "Electronics",
+        name: "Eggs, dozen 🥚",
+        quantity: 2,
+        category: "Diary",
     };
     
     const item4 = {
-        name: "Wireless Keyboard ⌨️",
-        quantity: 200,
-        category: "Accessories",
+        name: "Bananas 🍌",
+        quantity: 6,
+        category: "Produce",
     };
 
     const item5 = {
-        name: "Wireless Mouse 🖱️",
-        quantity: 200,
-        category: "Accessories",
+        name: "Broccoli 🥦",
+        quantity: 3,
+        category: "Produce",
     };
     
     const item6 = {
-        name: "Smartwatch ⌚",
-        quantity: 500,
-        category: "Jewelry",
+        name: "Chicken Breasts, 1 kg 🍗",
+        quantity: 1,
+        category: "Meat",
     };
     
     const item7 = {
-        name: "Camera 📷",
-        quantity: 80,
-        category: "Filming Device",
+        name: "Pasta Sauce 🍝",
+        quantity: 3,
+        category: "Canned goods",
     };
     
     const item8 = {
-        name: "Video Camera 📹",
-        quantity: 90,
-        category: "Filming Device",
+        name: "Spaghetti, 454 g 🍝",
+        quantity: 2,
+        category: "Dry goods",
     };
     
     const item9 = {
-        name: "Microphone 🎙️",
-        quantity: 40,
-        category: "Accessories",
+        name: "Toilet Paper, 12 pack 🧻",
+        quantity: 1,
+        category: "Household",
     };
     
     const item10 = {
-        name: "Power Bank 🔋",
-        quantity: 50,
-        category: "Accessories",
+        name: "Paper Towels, 6 pack",
+        quantity: 1,
+        category: "Household",
     };
     
     const item11 = {
-        name: "Adapter🔌",
-        quantity: 50,
-        category: "Accessories",
+        name: "Dish Soap 🍽️",
+        quantity: 1,
+        category: "Household",
     };
     
     const item12 = {
-        name: "Wifi Transmitter📡",
-        quantity: 30,
-        category: "Communication",
+        name: "Hand Soap 🧼",
+        quantity: 34,
+        category: "Household",
     };
 
     return (

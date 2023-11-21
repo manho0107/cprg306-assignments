@@ -74,11 +74,13 @@ export default function NewItem() {
                                 <option value disable>
                                     Category
                                 </option>
-                                <option value="Electronics">Electronics</option>
-                                <option value="Accessories">Accessories</option>
-                                <option value="Jewelry">Jewelry</option>
-                                <option value="Filming Device">Filming Device</option>
-                                <option value="Communication">Communication</option>
+                                <option value="Dairy">Dairy</option>
+                                <option value="Bakery">Bakery</option>
+                                <option value="Produce">Produce</option>
+                                <option value="Meat">Meat</option>
+                                <option value="Canned goods">Canned goods</option>
+                                <option value="Dry goods">Dry goods</option>
+                                <option value="Household">Household</option>
                             </select>
                         </div>
                         <div className="flex justify-center mb-4">
