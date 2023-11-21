@@ -14,44 +14,30 @@ export default function Page() {
   const [ items, setItems ] = useState([]);
   const [selectedItemName, setSelectedItemName] = useState("");
 
-  /*const handleAddItem = (item) => {
-    setItems([...items, item]);
-  };*/                                      // use previously but not this time.
-
   const handleItemSelect = (itemName) => {
     const cleanedItemName = itemName.replace(/\p{Emoji}/gu, '').split(',')[0].trim(); // remove emoji, split words with ",'
     setSelectedItemName(cleanedItemName); // Set the sanitized item name as the selected item
   };
 
+  // handle adding a new item
   const handleAddItem = async (newItem) => {
     try {
       if (user) {
-        const newItemId = await addItems(user.uid, newItem);
+        const newItemId = await addItems(user.uid, newItem); // assign an ID to a new item
         newItem.id = newItemId;
-        setItems([...items, newItem]);
+        setItems([...items, newItem]); // update the item state to include the new item
       }
-    } catch (error) {
+    } catch (error) { // error message during 'add' operation
       console.error("Error in adding item: ", error);
     }
   };
 
-  const handleDeleteItem = async (itemId) => {
-    try {
-      if (user) {
-        await deleteItems(user.uid, itemId);
-        const updatedItems = items.filter((item) => item.id !== itemId);
-        setItems(updatedItems);
-      }
-    } catch (error) {
-      console.error("Error in deleting item: ", error);
-    }
-  };
-
+  // load items
   const loadItems = async () => {
     try {
       if (user) {
-        const shoppingListItems = await getItems(user.uid);
-        setItems(shoppingListItems);
+        const shoppingListItems = await getItems(user.uid); // function to get the items
+        setItems(shoppingListItems); // update the items state with the fetched items
       }
     } catch (error) {
       console.error("Error in loading items: ", error);
@@ -77,7 +63,7 @@ export default function Page() {
         </div>
         <div className="flex pt-2 h-[48rem] mr-[48rem]">
           <div>
-            <ItemList items={items} onItemSelect={handleItemSelect} onDeleteItem={handleDeleteItem} />
+            <ItemList items={items} onItemSelect={handleItemSelect} />
           </div>
           <div className="ml-5">
             <h1 className="font-bold text-3xl mb-2">Meal Recipe Suggestions</h1>
